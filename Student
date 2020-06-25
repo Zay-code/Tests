@@ -1,0 +1,39 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+public class Student {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String sName,sSurname,sGender,bMonth;
+		Integer bDay,bYear,Grade;
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println( "Please input your first name(s) : ");
+		sName = in.nextLine();
+		
+		System.out.println( "Please input your Surname : ");
+		sSurname = in.nextLine();
+		
+		System.out.println( "Please input your Gender (Male/Female) : ");
+		sGender = in.nextLine();
+		
+		System.out.println( "Please input your birth month (January/Febraury/etc) : ");
+		bMonth = in.nextLine();
+		
+		System.out.println( "Please input your birth day (01,02,03) : ");
+		bDay = in.nextInt();
+		
+		System.out.println( "Please input your birth year : ");
+		bYear = in.nextInt();
+		
+		System.out.println( "Please input your Grade : ");
+		Grade = in.nextInt();
+		System.out.println( " " );
+		System.out.println( " Student Name(s) : " + sName );
+		System.out.println( " Student surname : " + sSurname );
+		System.out.println( " Student gender : " + sGender );
+		System.out.println( " Student Date of birth : " + bDay + " "+ bMonth + " " + bYear);
+		System.out.println( " Student Grade : " + Grade );
+		
+	}
+}
